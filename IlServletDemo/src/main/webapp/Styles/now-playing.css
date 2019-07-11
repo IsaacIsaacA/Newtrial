@@ -1,0 +1,49 @@
+h5, h2 {
+	text-align: center;
+}
+
+#apiDivHeader, #dbDivHeader, #ownedMoviesDivHeader{
+	margin-top: 50px;
+	text-align: center;
+}
+
+/*We're using CSS Grid instead of bootstrap to
+create our rows and columns. In order to use CSS
+Grid, we're using the "display" property.*/
+#apiDiv, #dbDiv, #ownedMoviesDiv{
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: 200px 200px 200px 200px 200px;
+	row-gap: 200, 200, 200;
+	column-gap: 50px;
+	height: 700px;
+	margin-top: 15px;
+	margin-left: 0.5em;
+}
+
+#apiDiv > div > h5, #dbDiv > div > h5 {
+	
+}
+
+.bg-custom{
+	background-color: lavenderblush;
+}
+
+img{
+	width: 200px;
+	margin-left: 35px;
+	margin-bottom: 10px;
+}
+
+#formHeader{
+	margin-top: 160px;
+	margin-left: 25px;
+}
+
+form{
+	margin-left: 250px;
+}
+
+input, button{
+	margin-left: 10px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Using the XMLHttpRequest object</h2>
+<script>
+function loadXMLDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  alert("Hello! I am an alert box!!");
+  xhttp.open("POST", "/ServletDemo/getflixapi/Displayresults", true);
+  xhttp.send();
+}
+</script>
+<button type="button" onclick="loadXMLDoc()">Change Content</button>
+<a class="nav-link" href="./index.html">Home</a>
+<p id="demo" onload="loadXMLDoc()"></p>
+
+
+
+</body>
+</html>

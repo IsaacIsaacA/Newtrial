@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body onload="loadXMLDoc()">
+
+<h1>Hello World!</h1>
+<p id="demo"></p>
+<script>
+function loadXMLDoc() {
+	  var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+	      document.getElementById("demo").innerHTML =
+	      this.responseText;
+	    }
+	  };
+	  xhttp.open("POST", "/ServletDemo/getflixapi/Displayresults", true);
+	  xhttp.send();
+	}
+</script>
+
+</body>
+</html>

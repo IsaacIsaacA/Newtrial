@@ -1,0 +1,27 @@
+form{
+	margin-top: 100px;
+}
+
+.form-control{
+	margin-bottom: 10px;
+	border-radius: 8px;
+	width: 300px;
+	display: inline-block;
+}
+
+#loginForm{
+	text-align:center;
+}
+
+h5{
+	display: inline-block;
+}
+
+footer, header{
+	text-align:center;
+}
+
+.bg-custom{
+	background-color:lavenderblush;
+}
+
